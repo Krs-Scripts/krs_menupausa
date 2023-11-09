@@ -1,0 +1,2 @@
+# krs_menupausa
+[ESX]
