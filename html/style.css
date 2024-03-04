@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    user-select: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenitore_titolo {
+    width: 140%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.titolo {
+    color: #228be6;
+    opacity: 0.7;
+    font-family: "Rubik", sans-serif;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    font-weight: 700;
+    font-size: 2.3vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    left: 0; 
+    display: block;
+    margin: 0 auto 10px; 
+    max-width: 80%; 
+    animation: slide .4s forwards;
+}
+
+
+.logo {
+    width: 400px;
+    margin: 0 auto; 
+}
+
+
+.contenitore_pulsanti {
+    width: 350px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    position: absolute;
+    bottom: 270px; 
+    left: 30px;
+  
+}
+
+.fa-solid,
+.fa-brands {
+    color: white;
+    font-size: 1vw;
+    width: 2vw;
+    height: 2vw;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+ 
+}
+
+
+.pulsanti-scelte {
+    color: rgba(235, 234, 234, 0.87);
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    left: 0; 
+    display: block;
+    margin-bottom: 10px; 
+    animation: slide .4s forwards;
+    cursor: pointer;
+}
+
+
+.pulsanti-scelte:hover {
+    color: #228be6;
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+@keyframes slide {
+    0% {
+        left: -250px;
+    }
+
+    100% {
+        left: 30px;
+    }
+}
